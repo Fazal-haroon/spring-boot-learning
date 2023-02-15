@@ -7,4 +7,6 @@ import java.util.List;
 
 public interface CourseSpringDataJpaRepository extends JpaRepository<CourseEntity, Long> {
     List<CourseEntity> findByAuthor(String author);
+
+    List<CourseEntity> findByName(String name);
 }

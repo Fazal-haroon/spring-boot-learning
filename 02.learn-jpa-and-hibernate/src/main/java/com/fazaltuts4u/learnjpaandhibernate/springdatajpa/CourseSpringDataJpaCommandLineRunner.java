@@ -26,5 +26,6 @@ public class CourseSpringDataJpaCommandLineRunner implements CommandLineRunner {
         System.out.println("springDataJpaRepository.count = " + springDataJpaRepository.count());
 
         System.out.println("springDataJpaRepository.findByAuthor = " + springDataJpaRepository.findByAuthor("Fazal Tuts4U 2"));
+        System.out.println("springDataJpaRepository.findByName = " + springDataJpaRepository.findByName("Angular 2"));
     }
 }
