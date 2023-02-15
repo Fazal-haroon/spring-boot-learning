@@ -18,5 +18,8 @@ public class CourseJdbcCommandLineRunner implements CommandLineRunner {
         courseJDBCRepository.insert(new Course(3, "ReactJs", "Fazal Tuts4U 3"));
 
         courseJDBCRepository.deleteById(3);
+
+        System.out.println("findById(1) = " + courseJDBCRepository.getCourseById(1));
+        System.out.println("findById(2) = " + courseJDBCRepository.getCourseById(2).toString());
     }
 }
