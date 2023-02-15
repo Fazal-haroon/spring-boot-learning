@@ -7,9 +7,9 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
 @Component
-public class CourseJpaCommandLineRunner implements CommandLineRunner {
+public class CourseJpaCommandLineRunner /*implements CommandLineRunner*/ {
 
-    @Autowired
+    /*@Autowired
     private CourseJpaRepository courseJpaRepository;
 
     @Override
@@ -22,5 +22,5 @@ public class CourseJpaCommandLineRunner implements CommandLineRunner {
 
         System.out.println("findById(1) = " + courseJpaRepository.findById(1));
         System.out.println("findById(2) = " + courseJpaRepository.findById(2).toString());
-    }
+    }*/
 }
